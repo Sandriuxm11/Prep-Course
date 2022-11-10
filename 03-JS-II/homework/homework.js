@@ -53,18 +53,21 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   if(idioma='aleman'){
-    return 'Guten Tang!'
+    return 'Guten Tag!'
   }
-  if(idioma='mandarin'){
+  else if(idioma='mandarin'){
     return 'Ni Hao!'
   }
-  if(idioma='ingles'){
+  else if(idioma='ingles'){
     return 'Hello!'
   }
-  if(idioma !== 'aleman' || idioma !== 'mandarin' || idioma !== 'ingles'){
+  else if(idioma !== 'aleman' && idioma !== 'mandarin' && idioma !== 'ingles'){
     return 'Hola!'
   }
   else if(idioma=undefined){
+    return 'Hola!'
+  }
+  else; {
     return 'Hola!'
   }
 }
@@ -77,18 +80,48 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  switch(color){
+    case 'blue':
+      console.log('This is blue');
+      break;
+    case 'red':
+      console.log('This is red');
+      break;
+    case 'green':
+      console.log('This is green');
+      break;
+    case 'orange':
+      console.log('This is orange');
+      break;
+    default:
+      console.log('Color not found');
+      break;
+    
+    }
 }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (numero===10 || numero===5){
+    return true
+  }
+  else{
+    return false
+  }
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
+  if(numero<50 && numero>20){
+    return true
+  }
+  else{
+    return false
+  }
 }
 
 function esEntero(numero) {
