@@ -1,7 +1,0 @@
-for: Es una funcion para hacer actividades de manera repetitiva hasta un valor límite.
-&&, ||, !: El significado de cada simbolo son los siguientes
-&& estos es Y
-|| Esto es O
-! Esto significa negación
-Las distintas combinaciones de ellos con variables nos dan distintos resultavos booleanos.
-
